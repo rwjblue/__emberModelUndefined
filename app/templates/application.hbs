@@ -1,3 +1,5 @@
 <h2 id="title">Welcome to Ember</h2>
 
 {{outlet}}
+<LinkTo data-test-foo @route="color" @model="green">Go to green!</LinkTo>
+<LinkTo data-test-nested-foo @route="nested-color.color" @model="green">Go to green in the engine!</LinkTo>
